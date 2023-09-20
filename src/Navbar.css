@@ -1,0 +1,8 @@
+.navbar
+{
+    height: 9vh;
+    width: 100vw;
+    background-image: linear-gradient(black,black);
+    border-bottom: 1px solid white;
+}
+
