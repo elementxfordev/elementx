@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&family=Oswald&display=swap');
+.HeroContainer{
+    background-image: linear-gradient(black,#212121);
+    height: 91vh;
+    width: 100vw;
+    /* border : 2px solid yellow; */
+}
+.UpperCon{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.heading1{
+    margin-top: 100px;
+    font-size: 50px;
+    color : white;
+}
+.heading2{
+    font-size: 60px;
+    color : white;
+}
+.heading3{
+    color : #9CA3AF;
+    font-size: 15px;
+    padding : 20px;
+}
+.beautiful{
+    color : purple;
+    font-size: 20px;
+}
+
+.heading1, .heading2, .heading3, .beautiful
+{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: capitalize;
+}
+
+.input-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border : 2px solid #212121;
+    border-radius: 23px;
+
+}
+.input{
+    height: 46px;
+    width: 400px;
+    font-size: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border : none;
+    border-right: 2px solid #212121;
+    background:#D1D5DB;
+    outline: none;
+    padding : 2px;
+    text-align: center;
+}
+.searchButton
+{
+    height: 50px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background:#D1D5DB;
+    border-left: none;
+    border: none;
+    font-weight: 600;
+    font-size: large;
+}
+.main-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container:hover{
+    border : 2px solid #16b7ed;
+}
+.navbar
+{
+    height: 9vh;
+    width: 100vw;
+    background-color: black;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-btn{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    gap : 10px;
+    margin-right: 10px;
+    /* border : 2px solid red; */
+}
+.logo-image{
+    height: 80px;
+    margin-left: 5px;
+}
+.btn {
+    position: relative;
+    overflow: hidden;
+    height: 35px;
+    padding: 0 2rem;
+    border-radius: 8px;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    background: linear-gradient(
+      82.3deg,
+      rgba(150, 93, 233, 1) 10.8%,
+      rgba(99, 88, 238, 1) 94.3%
+    );
+    font-weight: bold;
+  }
+  
+  .btn:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .button-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgba(150, 93, 233, 1) 10.8%,
+      rgba(99, 88, 238, 1) 94.3%
+    );
+    transition: all 0.475s;
+  }
+.navbar-elements{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width : 950px;
+}
+
+.element-button{
+    padding: 0 2rem 0 3px;
+    height: 35px;
+    border-radius: 5px;
+    border : none;
+    /* font-weight: bolder; */
+    font-size: 17px;
+}
+
+.content {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(43, 43, 43) ; */
+    border-right: 2px solid black;
+    background-image: linear-gradient(rgb(1, 1, 1),#212121);
+    /* border-top-right-radius: 8px; */
+    height : 90.7vh;
+    width: 210px; 
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+    margin-left: 3px;
+}
+
+.sideBarLabels:hover {
+    cursor : pointer; 
+    background-color: #333;
+    border-radius: 8px;
+}

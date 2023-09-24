@@ -1,4 +1,4 @@
-import './../Css/Sidebar.css';
+// import './../Css/Sidebar.css';
 import React from 'react'
 import { AiFillHome,AiOutlineCreditCard,AiFillCheckCircle } from 'react-icons/ai';
 import { CgPlayButtonO,CgMoreVertical } from 'react-icons/cg';
@@ -6,8 +6,9 @@ import { VscOutput } from 'react-icons/vsc';
 import { LuTextCursorInput } from 'react-icons/lu';
 import { TbLoader3 } from 'react-icons/tb'
 import { BsUiRadiosGrid,BsToggles } from 'react-icons/bs'
+import { useNavigate } from 'react-router-dom';
 const SideBar = (props) => {
-
+  let navigateTo = useNavigate();
   let activeMode = {
     color : "rgb(77,175,200)",
     textShadow  : "0 0 10px rgba(77,175,200,0.3),0 0 10px rgba(77,175,200,0.3),0 0 10px rgba(77,175,200,0.3)",
@@ -32,51 +33,50 @@ const SideBar = (props) => {
   }
   console.log(props.active);
   let handleButtonRequest = () => {
-    props.setActive("button"); 
+    navigateTo('/buttons');
   }
   let handleCardRequest = () => {
-    props.setActive("card");
+    navigateTo('/cards');
     
   }
   let handleCheckBoxRequest = () => {
-    props.setActive("checkBox");
+    navigateTo('/checkboxes');
   }
   let handleFormRequest = () => {
-    props.setActive("form");
+    navigateTo('/forms');
   }
   let handleOtherRequest = () => {
-    props.setActive("other");
+    navigateTo('/others');
   }
   let handleAllRequest = () => {
-    props.setActive("all");
+    navigateTo('/all');
   }
   let handleInputsRequest = () => {
-    props.setActive("input");
+    navigateTo('/inputs');
   }
   let handleLoadersRequest = () => {
-    props.setActive("loader");
+    navigateTo('/loaders');
   }
   let handleRadioButtonRequest = () => {
-    props.setActive("radio button");
+    navigateTo('/radioButtons');
   }
   let handletoggleSwitchesRequest = () => {
-    props.setActive("toggle switche");
+    navigateTo('/toggleSwitches');
   }
-
   return (
     <div style={{backgroundColor : '#212121'}}>
       <div className="content">
               <div className="options">
                 <label className="sideBarLabels" style={props.active === "all" ? activeMode : inActiveMode} onClick={handleAllRequest}><AiFillHome />All</label>
-                <label className="sideBarLabels" style={props.active === "button" ? activeMode : inActiveMode} onClick={handleButtonRequest}><CgPlayButtonO />Button</label>
-                <label className="sideBarLabels" style={props.active === "form" ? activeMode : inActiveMode} onClick={handleFormRequest}><VscOutput />Form</label>
-                <label className="sideBarLabels" style={props.active === "card" ? activeMode : inActiveMode} onClick={handleCardRequest}><AiOutlineCreditCard />Card</label>
-                <label className="sideBarLabels" style={props.active === "checkBox" ? activeMode : inActiveMode} onClick={handleCheckBoxRequest}><AiFillCheckCircle />Check box</label>
-                <label className="sideBarLabels" style={props.active === "input" ? activeMode : inActiveMode} onClick={handleInputsRequest}><LuTextCursorInput />Inputs</label>
-                <label className="sideBarLabels" style={props.active === "loader" ? activeMode : inActiveMode} onClick={handleLoadersRequest}><TbLoader3 />Loaders</label>
-                <label className="sideBarLabels" style={props.active === "radio button" ? activeMode : inActiveMode} onClick={handleRadioButtonRequest}><BsUiRadiosGrid />Radio Buttons</label>
-                <label className="sideBarLabels" style={props.active === "toggle switche" ? activeMode : inActiveMode} onClick={handletoggleSwitchesRequest}><BsToggles />toggle Switches</label>
-                <label className="sideBarLabels" style={props.active === "other" ? activeMode : inActiveMode} onClick={handleOtherRequest}><CgMoreVertical />Other</label>
+                <label className="sideBarLabels" style={props.active === "buttons" ? activeMode : inActiveMode} onClick={handleButtonRequest}><CgPlayButtonO />Button</label>
+                <label className="sideBarLabels" style={props.active === "forms" ? activeMode : inActiveMode} onClick={handleFormRequest}><VscOutput />Form</label>
+                <label className="sideBarLabels" style={props.active === "cards" ? activeMode : inActiveMode} onClick={handleCardRequest}><AiOutlineCreditCard />Card</label>
+                <label className="sideBarLabels" style={props.active === "checkBoxes" ? activeMode : inActiveMode} onClick={handleCheckBoxRequest}><AiFillCheckCircle />Check box</label>
+                <label className="sideBarLabels" style={props.active === "inputs" ? activeMode : inActiveMode} onClick={handleInputsRequest}><LuTextCursorInput />Inputs</label>
+                <label className="sideBarLabels" style={props.active === "loaders" ? activeMode : inActiveMode} onClick={handleLoadersRequest}><TbLoader3 />Loaders</label>
+                <label className="sideBarLabels" style={props.active === "radioButtons" ? activeMode : inActiveMode} onClick={handleRadioButtonRequest}><BsUiRadiosGrid />Radio Buttons</label>
+                <label className="sideBarLabels" style={props.active === "toggleSwitches" ? activeMode : inActiveMode} onClick={handletoggleSwitchesRequest}><BsToggles />toggle Switches</label>
+                <label className="sideBarLabels" style={props.active === "others" ? activeMode : inActiveMode} onClick={handleOtherRequest}><CgMoreVertical />Other</label>
               </div>
       </div>
     </div>

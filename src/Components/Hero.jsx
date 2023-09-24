@@ -1,7 +1,7 @@
 import React from 'react';
 import {ImSearch} from 'react-icons/im';
 import { BsStars } from 'react-icons/bs';
-import './../Css/Hero.css';
+// import './../Css/Hero.css';
 
 const Hero = () => {
   return (
