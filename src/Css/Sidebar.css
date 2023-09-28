@@ -17,6 +17,8 @@
     align-items: center;
     height: 80vh;
     margin-left: 3px;}
+
+    
 .sideBarLabels:hover {
     cursor : pointer; 
     background-color: #333;

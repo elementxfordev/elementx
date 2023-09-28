@@ -1,4 +1,3 @@
-// import './../Css/Sidebar.css';
 import React from 'react'
 import { AiFillHome,AiOutlineCreditCard,AiFillCheckCircle } from 'react-icons/ai';
 import { CgPlayButtonO,CgMoreVertical } from 'react-icons/cg';
@@ -33,35 +32,35 @@ const SideBar = (props) => {
   }
   console.log(props.active);
   let handleButtonRequest = () => {
-    navigateTo('/buttons');
+    props.setActive('buttons');
   }
   let handleCardRequest = () => {
-    navigateTo('/cards');
+    props.setActive('cards');
     
   }
   let handleCheckBoxRequest = () => {
-    navigateTo('/checkboxes');
+    props.setActive('checkBoxes');
   }
   let handleFormRequest = () => {
-    navigateTo('/forms');
+    props.setActive('forms');
   }
   let handleOtherRequest = () => {
-    navigateTo('/others');
+    props.setActive('others');
   }
   let handleAllRequest = () => {
-    navigateTo('/all');
+    props.setActive('all');
   }
   let handleInputsRequest = () => {
-    navigateTo('/inputs');
+    props.setActive('inputs');
   }
   let handleLoadersRequest = () => {
-    navigateTo('/loaders');
+    props.setActive('loaders');
   }
   let handleRadioButtonRequest = () => {
-    navigateTo('/radioButtons');
+    props.setActive('radioButtons');
   }
   let handletoggleSwitchesRequest = () => {
-    navigateTo('/toggleSwitches');
+    props.setActive('toggleSwitches');
   }
   return (
     <div style={{backgroundColor : '#212121'}}>
