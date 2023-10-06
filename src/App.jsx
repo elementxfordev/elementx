@@ -1,4 +1,3 @@
-import './Css/main.css';
 import React, { useEffect } from 'react';
 import { useState } from 'react';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
@@ -25,7 +24,6 @@ const App = () => {
             <Route path='/elements' element={<View />} />
           </Routes>
       </BrowserRouter>
-      {/* <Navbar /> */}
     </div>
   )
 }

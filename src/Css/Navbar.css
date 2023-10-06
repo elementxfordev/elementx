@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,500&family=Young+Serif&display=swap');
 .navbar
 {
-    height: 9.325vh;
+    height: 9vh;
     width: 100vw;
     background-color: black;
     display : flex;
@@ -8,16 +9,19 @@
     align-items: center;
   }
 
-.navbar-btn{
+.navbar-left
+{
     display : flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     gap : 10px;
-    margin-right: 10px;
+    width : 50vw;
+    height: 9vh;
+    margin-right: 1rem;
 }
 .logo-image{
-    height: 80px;
-    margin-left: 5px;
+    height: 4rem;
+    margin-left: 20px;
 }
 .btn {
     position: relative;
@@ -42,18 +46,33 @@
     z-index: 1;
   }
 
-.navbar-elements{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    width : 950px;
-}
 
 .element-button{
-    padding: 0 2rem 0 3px;
-    height: 35px;
-    border-radius: 5px;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    padding : 8px 8px 4px 10px;
+    background-color: black;
     border : none;
-    /* font-weight: bolder; */
+    color : #F2F2F2;
+    font-weight: bold;
     font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 3px;
+}
+
+.element-button:hover{
+  background-color: #333;
+  border-radius: 5px;
+  padding : 8px 8px 4px 10px;
+  
+}
+
+.navbar-right{
+  display : flex;
+  justify-content: start;
+  align-items: center;
+  height: 9vh;
+  width : 50vw;
+  gap : 90px;
 }

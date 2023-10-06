@@ -5,9 +5,8 @@ import { VscOutput } from 'react-icons/vsc';
 import { LuTextCursorInput } from 'react-icons/lu';
 import { TbLoader3 } from 'react-icons/tb'
 import { BsUiRadiosGrid,BsToggles } from 'react-icons/bs'
-import { useNavigate } from 'react-router-dom';
+import './../Css/Sidebar.css';
 const SideBar = (props) => {
-  let navigateTo = useNavigate();
   let activeMode = {
     color : "rgb(77,175,200)",
     textShadow  : "0 0 10px rgba(77,175,200,0.3),0 0 10px rgba(77,175,200,0.3),0 0 10px rgba(77,175,200,0.3)",
@@ -63,7 +62,7 @@ const SideBar = (props) => {
     props.setActive('toggleSwitches');
   }
   return (
-    <div style={{backgroundColor : '#212121'}}>
+    <div >
       <div className="content">
               <div className="options">
                 <label className="sideBarLabels" style={props.active === "all" ? activeMode : inActiveMode} onClick={handleAllRequest}><AiFillHome />All</label>
