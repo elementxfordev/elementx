@@ -1,0 +1,36 @@
+.view{
+    position: absolute;
+    display : flex;
+    width : 100vw;
+    background-image: linear-gradient(#000000 -3%,#212121);
+}
+
+.view-cards-main-frame{
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width : 90vw;
+    height: 90vh;
+    overflow : auto;
+}
+
+.view-top-navbar{
+  width : 84vw;
+  height: 10vh;
+  display: flex;
+  align-items: end;
+  border-bottom : 1px solid white;
+}
+
+.view-heading{
+  color : white;
+  margin-left: 2rem;
+}
+
+.cards{
+  width : 84vw;
+  height: 79.5vh;
+  display: flex;
+  flex-wrap: wrap;
+  
+}

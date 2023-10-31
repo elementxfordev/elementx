@@ -14,7 +14,7 @@
     display : flex;
     justify-content: end;
     align-items: center;
-    gap : 10px;
+    gap : 15px;
     width : 50vw;
     height: 9vh;
     margin-right: 1rem;
@@ -23,48 +23,24 @@
     height: 4rem;
     margin-left: 20px;
 }
-.btn {
-    position: relative;
-    overflow: hidden;
-    height: 35px;
-    padding: 0 2rem;
-    border-radius: 8px;
-    background: #3d3a4e;
-    background-size: 400%;
-    color: #fff;
-    border: none;
-    background: linear-gradient(
-      82.3deg,
-      rgba(150, 93, 233, 1) 10.8%,
-      rgba(99, 88, 238, 1) 94.3%
-    );
-    font-weight: bold;
-  }
-  
-  .button-content {
-    position: relative;
-    z-index: 1;
-  }
-
 
 .element-button{
     display : flex;
     align-items: center;
     justify-content: center;
-    padding : 8px 8px 4px 10px;
+    padding : 8px 8px 8px 10px;
     background-color: black;
     border : none;
     color : #F2F2F2;
-    font-weight: bold;
-    font-size: 17px;
+    font-weight: lighter;
+    font-size: 18px;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 3px;
 }
 
 .element-button:hover{
   background-color: #333;
   border-radius: 5px;
-  padding : 8px 8px 4px 10px;
+  padding : 8px 8px 8px 10px;
   
 }
 
@@ -74,5 +50,26 @@
   align-items: center;
   height: 9vh;
   width : 50vw;
-  gap : 90px;
+  gap : 50px;
+  margin-top: 3px;
 }
+
+.navbar-left button{
+  border : 0px;
+  padding : 5px 8px 5px 8px;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: transparent;
+  color : white;
+  font-size: larger;
+}
+
+.navbar-left button:hover{
+  cursor : pointer;
+  background-color: #F2F2F2;
+  color : black;
+  transition: ease-in-out 0.3s;
+}
+
+
+

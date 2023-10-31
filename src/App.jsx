@@ -7,7 +7,7 @@ import Login from './Components/Login';
 import Register from './Components/Register';
 import Create from './Components/Create';
 import Profile from './Components/Profile';
-import View from './Components/View';
+import Element from './Components/Element';
 const App = () => {
   const [html,setHtml] = useState("");
   const [css,setCss] = useState("");
@@ -21,7 +21,7 @@ const App = () => {
             <Route path='/profile' element={<Profile />} />
             <Route path='/login' element={<Login />} />
             <Route path='/register' element={<Register />} />
-            <Route path='/elements' element={<View />} />
+            <Route path='/elements' element={<Element />} />
           </Routes>
       </BrowserRouter>
     </div>
