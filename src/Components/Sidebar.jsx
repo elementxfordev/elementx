@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { AiFillHome,AiOutlineCreditCard,AiFillCheckCircle } from 'react-icons/ai';
 import { CgPlayButtonO,CgMoreVertical } from 'react-icons/cg';
 import { VscOutput } from 'react-icons/vsc';
 import { LuTextCursorInput } from 'react-icons/lu';
 import { TbLoader3 } from 'react-icons/tb'
 import { BsUiRadiosGrid,BsToggles } from 'react-icons/bs'
+
+
 import './../Css/Sidebar.css';
 const SideBar = (props) => {
   let activeMode = {
@@ -31,7 +33,6 @@ const SideBar = (props) => {
     gap : '22px',
     marginRight : "2rem"
   }
-  console.log(props.active);
   let handleButtonRequest = () => {
     props.setActive('Buttons');
   }

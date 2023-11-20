@@ -127,6 +127,20 @@
     font-size: 0.75rem;
     line-height: 1rem;
     color: rgba(156, 163, 175, 1);
-    margin-top : 20px;
+    /* margin-top : 20px; */
   }
   
+  .signup span{
+    color : white;
+    margin-left: 3%;
+    cursor: pointer;
+  }
+
+  .message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    padding : 5px;
+    color : rgb(255,0, 0);
+  }

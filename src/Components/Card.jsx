@@ -1,11 +1,7 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import './../Css/ProductCard.css';
-import { BiCodeAlt } from 'react-icons/bi';
-import { CgProfile } from 'react-icons/cg';
-import { MdFavoriteBorder } from 'react-icons/md';
-const ProductCard = (props) => {  
-    const Container = styled.div`${props.css}`;
+import React from 'react'
+
+const Card = () => {
+  const Container = styled.div`${props.css}`;
   return (
     <div className='product-card-body'>
       <div className='product-card-content'>
@@ -27,7 +23,7 @@ const ProductCard = (props) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ProductCard;
+export default Card
